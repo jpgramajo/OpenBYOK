@@ -1,47 +1,44 @@
-# OpenNext Starter
+# OpenBYOK
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+**Tus herramientas. Tus llaves. Tu control.**
 
-## Getting Started
+Suite de herramientas de código abierto que vive en tu navegador. Sin registro, sin pagos, sin datos en la nube. Configura tus servicios de IA una vez y úsalos en todas las herramientas que lo necesiten.
 
-Read the documentation at https://opennext.js.org/cloudflare.
+## Herramientas
 
-## Develop
+| Herramienta | Descripción | Requiere IA |
+|---|---|---|
+| **Chat con IA** | Conversa con modelos de lenguaje usando los proveedores que configures | Sí |
+| **Mayuéutica** | Aprende a través de tests inteligentes generados por IA | Sí |
+| **Akiba** | Control financiero personal. Registra ingresos, gastos e insights | Opcional |
 
-Run the Next.js development server:
+## Filosofía
+
+- **Sin servidores** — Todo permanece en tu navegador. No recolectamos ni almacenamos nada.
+- **Código abierto** — Licencia MIT. Puedes auditar, modificar y redistribuir.
+- **Configura una vez, usa en todo** — Agrega tus proveedores de IA en la plataforma y cada herramienta los consume según lo que necesite.
+
+## Stack
+
+- [Next.js](https://nextjs.org) con App Router
+- [OpenNext](https://opennext.js.org) para despliegue en [Cloudflare](https://cloudflare.com)
+- [Tailwind CSS](https://tailwindcss.com) v4
+
+## Desarrollo
 
 ```bash
+npm install
 npm run dev
-# or similar package manager command
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-## Preview
-
-Preview the application locally on the Cloudflare runtime:
-
-```bash
-npm run preview
-# or similar package manager command
-```
-
-## Deploy
-
-Deploy the application to Cloudflare:
+## Despliegue
 
 ```bash
 npm run deploy
-# or similar package manager command
 ```
 
-## Learn More
+## Licencia
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[MIT](LICENSE)

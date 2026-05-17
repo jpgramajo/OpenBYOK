@@ -1,26 +1,87 @@
 @import "tailwindcss";
 
 :root {
-	--background: #ffffff;
-	--foreground: #171717;
+	--bg: #FBF8F3;
+	--surface: #F3EDE5;
+	--text: #3A3330;
+	--text-muted: #918A83;
+	--primary: #8CB08A;
+	--primary-light: #D3E5D1;
+	--primary-dark: #6E946C;
+	--accent-rose: #DBA8A8;
+	--accent-rose-light: #F0DADA;
+	--accent-amber: #E2C78C;
+	--accent-amber-light: #F2E6CB;
+	--accent-sky: #A8C8D8;
+	--accent-sky-light: #D6E8F0;
+	--accent-lavender: #C4B5D4;
+	--accent-lavender-light: #E3DCEF;
+	--border: #E2DCD5;
+	--shadow: rgba(58, 51, 48, 0.06);
+	--shadow-md: rgba(58, 51, 48, 0.1);
 }
 
 @theme inline {
-	--color-background: var(--background);
-	--color-foreground: var(--foreground);
-	--font-sans: var(--font-geist-sans);
-	--font-mono: var(--font-geist-mono);
+	--color-bg: var(--bg);
+	--color-surface: var(--surface);
+	--color-text: var(--text);
+	--color-text-muted: var(--text-muted);
+	--color-primary: var(--primary);
+	--color-primary-light: var(--primary-light);
+	--color-primary-dark: var(--primary-dark);
+	--color-accent-rose: var(--accent-rose);
+	--color-accent-rose-light: var(--accent-rose-light);
+	--color-accent-amber: var(--accent-amber);
+	--color-accent-amber-light: var(--accent-amber-light);
+	--color-accent-sky: var(--accent-sky);
+	--color-accent-sky-light: var(--accent-sky-light);
+	--color-accent-lavender: var(--accent-lavender);
+	--color-accent-lavender-light: var(--accent-lavender-light);
+	--color-border: var(--border);
+	--font-sans: var(--font-dm-sans);
+	--font-display: var(--font-outfit);
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--background: #0a0a0a;
-		--foreground: #ededed;
+		--bg: #1E1C1A;
+		--surface: #2A2725;
+		--text: #F0EBE3;
+		--text-muted: #A09890;
+		--primary: #9DC09B;
+		--primary-light: #2D3D2C;
+		--primary-dark: #B8D6B6;
+		--accent-rose: #C89090;
+		--accent-rose-light: #3D2D2D;
+		--accent-amber: #D4B674;
+		--accent-amber-light: #3D3524;
+		--accent-sky: #90B5C8;
+		--accent-sky-light: #243040;
+		--accent-lavender: #B0A0C4;
+		--accent-lavender-light: #302840;
+		--border: #3A3530;
+		--shadow: rgba(0, 0, 0, 0.2);
+		--shadow-md: rgba(0, 0, 0, 0.35);
 	}
 }
 
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-	background: var(--background);
-	color: var(--foreground);
-	font-family: Arial, Helvetica, sans-serif;
+	background: var(--bg);
+	color: var(--text);
+	font-family: var(--font-dm-sans), system-ui, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+	background: var(--primary-light);
+	color: var(--text);
 }
